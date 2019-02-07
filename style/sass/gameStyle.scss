@@ -1,0 +1,38 @@
+@import 'colors';
+
+$ff: "Times New Roman", Times, serif;
+$bg: #f2f2f2;
+$btnColor: #accab8;
+$pad1: 50%;
+$modalBg: rgba(0,0,0,0.4);
+
+
+body {
+    background: $bg;
+    font-family: $ff;
+    
+}
+h1, h4 {
+    font-weight: bolder;
+    text-align: center;
+}
+
+canvas {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    background-color: $btnColor;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    width: 100%;
+    height: 100%;
+    background-color: $modalBg;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>ConwayBlinkerGameofLife</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+<!-- Game CSS-->
+<link rel="stylesheet" href="style/css/gameStyle.css">
+
+<!-- Blinker Game Javascript File -->
+<script type="text/javascript" src="game.js"></script>
+
+</head>
+
+
+<body>
+
+<!-- Div Body Content -->
+<div class="container-fluid">
+    <!-- Simple Header -->
+    <div class="jumbotron">
+        <h1>Conway Game of Life (Blinker)</h1>
+        <h4>By Brian Wahinya</h4>
+    </div>    
+    <!-- Buttons -->
+    <div id="divButtons">
+        <button id="startGameBtn" onclick="startGame()" style = 'visibility: hidden'>Start Game</button>
+        <br>
+        <br>
+        <button id="assumptionsBtn" onclick = "modalContent()" style = 'visibility: hidden'>Assumptions</button>               
+    </div>
+
+    <br><br>
+
+    <!-- Canvas Element where the game will be displayed -->
+    <div>
+        <canvas id="canvas"></canvas>
+    </div>
+    
+    <!--Assumptions Modal Content -->
+    <div class="modal" id="asumModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-header">
+                <h3>Assumptions</h3>
+            </div>
+            <div class="modal-body">
+                <ol>
+                    <li>Only one pattern is to be generated: <b>(Triomino Pattern) or (Blinker - Period 2).</b></li>
+                    <li>The user will not interact directly with the game.</li>
+                    <li>The transformation rate from one pattern to the next is constant.</li>
+                    <li>The grid size, canvas size, number of cells are constant.</li>
+                    <li>Javascript must be enabled for the browser to display the game.</li>
+                    <li>The browser must be up-to-date to support Javascript ES6.</li>
+                </ol>
+            </div>
+            <div class="modal-footer">
+                    <p><i>To interact with all the parameters above, this can be done easily in the <u>game.js</u> file</i></p>
+            </div>            
+        </div>
+    </div>
+    <!-- End of Assumption Modal Content -->
+</div>           
+    
+</body>
+</html>
